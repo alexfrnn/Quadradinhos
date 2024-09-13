@@ -20,7 +20,6 @@ async function generateQRCode(request) {
 	return new Response(qr_png, { headers });
 }
 
-
 const landing = `<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
