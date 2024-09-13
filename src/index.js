@@ -58,19 +58,29 @@ const landing = `<!DOCTYPE html>
       padding: 0.5em;
       margin-bottom: 1em;
       font-size: 1em;
+      border-radius: 4px;
+    }
+
+    .button-container {
+    display: flex;
+    justify-content: center;
+    gap:5px;
+    margin-bottom: 1em;
+    border-radius: 4px;
     }
 
     button {
       padding: 0.5em 1em;
       font-size: 1em;
       cursor: pointer;
+      border-radius: 4px;
     }
 
     .qr-container {
       display: inline-block;
       padding: 10px;
       // background: url('path/to/holographic.gif') center center / cover;
-      border-radius: 10px;
+      border-radius: 8px;
       margin-bottom: 1em;
     }
 
@@ -78,7 +88,7 @@ const landing = `<!DOCTYPE html>
       display: block;
       max-width: 100%;
       height: auto;
-      border-radius: 10px;
+      border-radius: 8px;
     }
   </style>
 </head>
@@ -87,11 +97,13 @@ const landing = `<!DOCTYPE html>
     <h1>QR Generator</h1>
     <p>Click the below button to generate a new QR code. .</p>
     <input type="text" id="text" placeholder="https://workers.dev"></input>
+    <div class="button-container">
     <button onclick="generate()">Generate QR Code</button>
+    <button id="download" style="display:none;" onclick="downloadQR()">Download</button>
+    </div>
     <div class="qr-container">
       <img id="qr" src="#" />
     </div>
-    <button id="download" style="display:none;" onclick="downloadQR()">Download</button>
   </div>
   <script>
     function generate() {
