@@ -64,7 +64,7 @@ To test this project locally, follow these steps:
    npm start
    ```
 
-4. Open your browser and navigate to `http://localhost:3000` to see the application in action.
+4. Open your browser and navigate to the URL provided by the local server to see the application in action.
 
 ## Credits
 
