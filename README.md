@@ -26,7 +26,8 @@ To test this project locally, follow these steps:
 
 # QR Code Generator
 
-This project is a simple QR Code generator built using Cloudflare Workers. It allows users to generate QR codes for any given text or URL and download the generated QR code image.
+This project is a simple QR Code generator built using Cloudflare Workers.
+It allows users to generate QR codes for any given text or URL and download the generated QR code image.
 
 ## Features
 
@@ -41,15 +42,14 @@ This project is a simple QR Code generator built using Cloudflare Workers. It al
 3. Once the QR code is generated, click the "Download" 
 button to download the QR code image.
 
-
-
+```
 ## Installation
 To test this project locally, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/alexfrnn/Quadradinhos.git
-   cd Quadradinhos
+   git clone https://github.com/alexfrnn/quadradinhos.git
+   cd quadradinhos
    ```
 
 2. Install the dependencies:
