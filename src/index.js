@@ -90,6 +90,24 @@ const landing = `<!DOCTYPE html>
       height: auto;
       border-radius: 8px;
     }
+
+    .footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #fef9f3;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+    }
+
+    .footer a {
+  text-decoration: none;
+  color: #000;
+    }
+
+    .footer a:hover {
+  text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -105,6 +123,9 @@ const landing = `<!DOCTYPE html>
       <img id="qr" src="#" alt="A picture of a generated QR Code"/>
     </div>
   </div>
+    <footer class="footer">
+  <p>Created by <a href="https://github.com/alexfrnn" target="_blank">alexfrnn</a></p>
+</footer>
   <script>
     function generate() {
       fetch(window.location.pathname, {
